@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM amd64/debian:buster
 LABEL maintainer="WDCommunity <https://github.com/wdcommunity>"
 
 ENV LANG C.UTF-8
