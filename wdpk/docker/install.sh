@@ -6,8 +6,8 @@ path_src=$1
 NAS_PROG=$2
 
 # define docker version
-VERSION="26.1.2"
-DC_VERSION="2.27.0"
+VERSION="27.3.1"
+DC_VERSION="2.29.7"
 
 log=/tmp/debug_apkg
 
@@ -28,7 +28,7 @@ cd "${APKG_PATH}"
 TARBALL="docker-${VERSION}.tgz"
 
 if [ ${ARCH} != "x86_64" ]; then
-    # As of docker 26.1.2 this appears to work with the docker provided binaries (at least on EX4100) so no need to compile it anymore
+    # As of docker 27.3.1 this appears to work with the docker provided binaries (at least on EX4100) so no need to compile it anymore
     DOCKER_ARCH="armhf"
     DC_ARCH="armv7"
 else
