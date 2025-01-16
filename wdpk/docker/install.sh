@@ -6,8 +6,8 @@ path_src=$1
 NAS_PROG=$2
 
 # define docker version
-VERSION="27.3.1"
-DC_VERSION="2.29.7"
+VERSION="27.5.0"
+DC_VERSION="2.32.3"
 
 log=/tmp/debug_apkg
 
